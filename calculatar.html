@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="calc.css">
+</head>
+
+<body>
+    <center>
+       
+        <a href="swapnumber.html">Swapnumber</a> |
+        <a href="oddeven.html">Odd Even</a> |
+        <a href="number.html">Check Number</a> |
+        <a href="squreroot.html">Squre Root</a> |
+        <a href="calculatar.html">Calculator</a> |
+		<br><br>
+        <div>
+            <form name="frm" class="border" action="/calc" method="get">
+			<h1 padding="bottom">Calculator</h1>
+                <input type="text" name="txt1" id="txt1" style="text-align: right;" placeholder="0" class="txt"><br><br>
+
+                <input type="button" value="1" onClick="frm.txt1.value+='1'" class="button">
+                <input type="button" value="2" onClick="frm.txt1.value+='2'" class="button">
+                <input type="button" value="3" onClick="frm.txt1.value+='3'" class="button">
+                <input type="button" value="+" onClick="frm.txt1.value+='+'" class="button"><br><br>
+
+                <input type="button" value="4" onClick="frm.txt1.value+='4'" class="button">
+                <input type="button" value="5" onClick="frm.txt1.value+='5'" class="button">
+                <input type="button" value="6" onClick="frm.txt1.value+='6'" class="button">
+                <input type="button" value="-" onClick="frm.txt1.value+='-'" class="button"><br><br>
+
+                <input type="button" value="7" onClick="frm.txt1.value+='7'" class="button">
+                <input type="button" value="8" onClick="frm.txt1.value+='8'" class="button">
+                <input type="button" value="9" onClick="frm.txt1.value+='9'" class="button">
+                <input type="button" value="*" onClick="frm.txt1.value+='*'" class="button"><br><br>
+
+                <input type="button" value="." onClick="frm.txt1.value+='.'" class="button">
+                <input type="button" value="0" onClick="frm.txt1.value+='0'" class="button">
+                <input type="button" value="/" onClick="frm.txt1.value+='/'" class="button">
+                <input type="button" value="=" onClick="frm.txt1.value=eval(frm.txt1.value)" class="button"><br><br>
+                <input type="reset" value="reset" class="rs">
+            </form>
+        </div>
+    </center>
+</body>
+
+</html>
