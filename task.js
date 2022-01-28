@@ -27,14 +27,19 @@ function oddeven(){
 }
 
 function squreroot(){
-    var n1=frm.txt1.value;
-    var root,temp=0;
-    root=n1/2;
-    while(root!=temp){
-        temp=root;
-        root=(n1/temp+temp)/2;
+    var n1=parseInt(frm.txt1.value);
+    //var root,temp=0;
+    //root=n1/2;
+    //while(root!=temp){
+    //    temp=root;
+    //    root=(n1/temp+temp)/2;
+    //}
+    //document.write(root+" Is Squre Root Of "+n1);
+    for(var i=0;i<n1;i++){
+        if(i*i==n1){
+            document.write(i+" Is Squre Root Of "+n1);
+        }
     }
-    document.write(root+" Is Squre Root Of "+n1);
 }
 
 function checknum(){
